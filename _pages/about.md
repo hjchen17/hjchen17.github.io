@@ -22,6 +22,7 @@ My research focuses on integrated photonics and its applications. My ambition is
 
 - Featured by *[Caltech News](https://www.caltech.edu/about/news/extending-optical-fibers-ultralow-loss-performance-to-photonic-chips)* and *[MIT Technology Review China](https://mp.weixin.qq.com/s/U_i70Jiyy3_scNbfYklU7Q)*. The work was also recognized by OFC 2026 as a **Top-Scored Paper** and one of only **three papers selected worldwide** for an  *[official news release](https://www.ofcconference.org/news-media/news-releases/2026/photonic-chip-technology-manipulates-visible-to-telecom-wavelengths-with-losses-approaching-fiber-op/)*.
 
+- Featured by *[Caltech News](https://www.caltech.edu/about/news/extending-optical-fibers-ultralow-loss-performance-to-photonic-chips)* and *[MIT Technology Review China](https://mp.weixin.qq.com/s/U_i70Jiyy3_scNbfYklU7Q)*. The work was also recognized by the **Optical Fiber Communication Conference and Exposition (OFC) 2026** as a **Top-Scored Paper** and one of only **three papers selected worldwide** for an *[OFC 2026 official news release](https://www.ofcconference.org/news-media/news-releases/2026/photonic-chip-technology-manipulates-visible-to-telecom-wavelengths-with-losses-approaching-fiber-op/)*. In that release, OFC program chair Takashi Matsui described the result as demonstrating **“fiber-class waveguide performance on chip”** and highlighted the significance of achieving sub-dB/m loss together with ultrahigh-Q resonators across 458–1550 nm for precision and quantum photonics.
 
 ## Prospective Collaborators
 
