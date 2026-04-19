@@ -13,11 +13,14 @@ I received my Ph.D. in Optics (July 2022) from Peking University, where I was ad
 
 My research focuses on integrated photonics and its applications. My ambition is to bring the coherence and ultralow loss of optical fiber into scalable photonic chips, advancing integrated photonics from isolated device demonstrations toward practical platforms for fundamental physics tests, universal quantum computing, and high-capacity optical communications for AI infrastructure.
 
-## Selected Highlights
+## Highlighted work
 
-**Nature 2026**: *Towards fibre-like loss for photonic integration from violet to near-infrared*
-- Developed a Ge:silica platform with ultralow propagation loss and ultrahigh-Q resonators
-- Interested in visible photonics, compact precision light sources, and integrated photonic systems for metrology and quantum technologies
+**Towards fibre-like loss for photonic integration from violet to near-infrared**
+*[Nature 649, 338–344 (2026)](https://www.nature.com/articles/s41586-025-09889-w)* 
+Developed an ultralow-loss Ge:silica integrated photonics platform that brings fibre-inspired material performance to CMOS-compatible chips, enabling record-low propagation loss from the visible to the near-infrared, ultrahigh-Q resonators, and highly coherent on-chip light sources. This work opens a scalable path toward visible photonics, compact precision lasers and frequency combs, and integrated systems for metrology, communications, and quantum technologies.
+
+Featured by [Caltech News](https://www.caltech.edu/about/news/extending-optical-fibers-ultralow-loss-performance-to-photonic-chips) and the [OFC 2026 official news release](https://www.ofcconference.org/news-media/news-releases/2026/photonic-chip-technology-manipulates-visible-to-telecom-wavelengths-with-losses-approaching-fiber-op/). The work was also highlighted by *MIT Technology Review China*, and recognized by OFC 2026 as a **Top-Scored Paper** and one of only **three papers selected worldwide** for an official news release.
+
 
 ## Prospective Students and Collaborators
 
