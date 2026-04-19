@@ -23,7 +23,7 @@ repository : "hjchen17/hjchen17.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Haojing Chen"
   pronouns         : # example: "she/her"  
   bio              : "Postdoctoral Scholar at Caltech. Integrated photonics"
