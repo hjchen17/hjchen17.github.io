@@ -13,6 +13,7 @@ site_theme               : "air" # The available themes options are "default", "
 title                    : "Haojing Chen"
 title_separator          : "-"
 name                     : &name "Haojing Chen"
+masthead_title           : "Homepage"
 description              : &description "Postdoctoral Scholar at Caltech working on ultralow-loss integrated photonics and its applications in visible lasers, microcombs, and precision photonics"   # Update this with a general description of your site, this is the default if not overridden by a page
 url : "https://hjchen17.github.io"
 baseurl : ""
