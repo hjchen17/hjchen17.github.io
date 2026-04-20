@@ -13,6 +13,9 @@ I received my Ph.D. in Optics (July 2022) from Peking University, where I was ad
 
 My research focuses on integrated photonics and its applications. My long-term ambition is to bring the coherence and ultralow loss of optical fiber into scalable photonic chips, advancing integrated photonics from isolated device demonstrations toward practical platforms for fundamental physics tests, universal quantum computing, and high-capacity optical communications in AI infrastructure.
 
+My scientific philosophy is to expand the frontiers of human knowledge while translating new photonic capabilities into technologies that benefit society and improve quality of life.
+
+
 ## Highlighted work
 
 **Towards fibre-like loss for photonic integration from violet to near-infrared** 
