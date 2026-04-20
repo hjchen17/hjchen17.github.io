@@ -20,7 +20,7 @@ I received my Ph.D. in Optics (July 2022) from Peking University, where I was ad
 <div style="display: flex; align-items: flex-start; gap: 24px; margin: 1.5em 0; flex-wrap: wrap; padding: 18px; border: 1px solid #e5e7eb; border-radius: 10px;">
 
   <div style="flex: 0 0 260px; max-width: 260px;">
-    <img src="{{ '/images/ge_silica_nature2026.jpg' | relative_url }}"
+    <img src="{{ '/images/Ge_silica.jpg' | relative_url }}"
          alt="Ge:silica integrated photonics platform"
          style="width: 100%; border-radius: 6px; display: block;">
   </div>
