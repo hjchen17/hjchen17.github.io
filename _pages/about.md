@@ -15,6 +15,37 @@ I received my Ph.D. in Optics (July 2022) from Peking University, where I was ad
 
 **My scientific philosophy** is to expand the frontiers of human knowledge while translating new photonic capabilities into technologies that benefit society and improve quality of life.
 
+## Highlighted Work
+
+<div style="display: flex; align-items: flex-start; gap: 24px; margin: 1.5em 0; flex-wrap: wrap; padding: 18px; border: 1px solid #e5e7eb; border-radius: 10px;">
+
+  <div style="flex: 0 0 260px; max-width: 260px;">
+    <img src="{{ '/images/ge_silica_nature2026.png' | relative_url }}"
+         alt="Ge:silica integrated photonics platform"
+         style="width: 100%; border-radius: 6px; display: block;">
+  </div>
+
+  <div style="flex: 1; min-width: 260px;">
+    <p style="margin-top: 0;">
+      <strong>
+        <a href="https://www.nature.com/articles/s41586-025-09889-w" style="text-decoration: none; color: inherit;">
+          Towards fibre-like loss for photonic integration from violet to near-infrared
+        </a>
+      </strong><br>
+      <em>Nature 649, 338–344 (2026)</em>
+    </p>
+
+    <p>
+      Developed an ultralow-loss Ge:silica integrated photonics platform that brings fibre-inspired material performance to CMOS-compatible chips, enabling record-low waveguide propagation loss and highly coherent on-chip laser sources from the visible to the near-infrared. This work opens a scalable path toward integrated systems for precision metrology, communications, and quantum technologies.
+    </p>
+
+    <p style="margin-bottom: 0;">
+      Featured by <a href="https://www.caltech.edu/about/news/extending-optical-fibers-ultralow-loss-performance-to-photonic-chips">Caltech News</a> and <a href="https://mp.weixin.qq.com/s/U_i70Jiyy3_scNbfYklU7Q">MIT Technology Review China</a>. The work was also recognized by the <strong>Optical Fiber Communication Conference and Exposition (OFC) 2026</strong> as a <strong>Top-Scored Paper</strong> and one of only <strong>three papers selected worldwide</strong> for an <a href="https://www.ofcconference.org/news-media/news-releases/2026/photonic-chip-technology-manipulates-visible-to-telecom-wavelengths-with-losses-approaching-fiber-op/">official news release</a>. In the release, program chair Takashi Matsui described the result as demonstrating “fiber-class waveguide performance on chip” and highlighted its significance for precision and quantum photonics.
+    </p>
+  </div>
+
+</div>
+
 
 ## Highlighted work
 
