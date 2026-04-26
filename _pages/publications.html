@@ -4,7 +4,6 @@ title: "Publications"
 permalink: /publications/
 author_profile: false
 ---
-
 <style>
   .pub-note {
     margin-bottom: 1.2rem;
@@ -24,37 +23,42 @@ author_profile: false
     display: grid;
     grid-template-columns: 2.4em 1fr;
     column-gap: 0.6rem;
-    margin-bottom: 1.8rem;   /* publication 之间的距离 */
+    margin-bottom: 2rem;   /* publication 与 publication 之间的距离 */
     align-items: start;
   }
 
   .pub-entry::before {
     content: counter(pubnum) ".";
     font-weight: 600;
-    line-height: 1.35;
+    line-height: 1.2;
     color: #374151;
     padding-top: 0.02rem;
   }
 
   .pub-body {
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.02rem;   /* 三行之间的距离，想更紧可以改成 0 */
+  }
+
+  .pub-body p {
+    margin: 0 !important;
+    padding: 0;
   }
 
   .pub-authors {
-    margin: 0 0 0.03rem 0;   /* 作者行与题目行间距 */
     font-style: italic;
-    line-height: 1.33;
+    line-height: 1.18;   /* 作者行内部行距 */
   }
 
   .pub-title {
-    margin: 0 0 0.03rem 0;   /* 题目行与引用行间距 */
     font-weight: 700;
-    line-height: 1.33;
+    line-height: 1.18;   /* 标题行内部行距 */
   }
 
   .pub-citation {
-    margin: 0;
-    line-height: 1.33;
+    line-height: 1.18;   /* 引用行内部行距 */
     color: #0070C0;
   }
 
@@ -64,7 +68,7 @@ author_profile: false
   }
 
   .pub-citation a:hover {
-    color: #5aa2ff;
+    color: #005a9e;
   }
 
   .me {
