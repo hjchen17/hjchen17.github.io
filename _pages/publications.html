@@ -10,40 +10,61 @@ author_profile: false
     margin-bottom: 1.2rem;
   }
 
+  .pub-page {
+    counter-reset: pubnum;
+  }
+
   .pub-section {
     margin-top: 1.8rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.9rem;
   }
 
   .pub-entry {
-    margin-bottom: 1.35rem;
+    counter-increment: pubnum;
+    display: grid;
+    grid-template-columns: 2.4em 1fr;
+    column-gap: 0.6rem;
+    margin-bottom: 1.8rem;   /* publication 之间的距离 */
+    align-items: start;
+  }
+
+  .pub-entry::before {
+    content: counter(pubnum) ".";
+    font-weight: 600;
+    line-height: 1.35;
+    color: #374151;
+    padding-top: 0.02rem;
+  }
+
+  .pub-body {
+    min-width: 0;
   }
 
   .pub-authors {
-    margin: 0 0 0.18rem 0;
+    margin: 0 0 0.06rem 0;   /* 作者行与题目行间距 */
     font-style: italic;
-    line-height: 1.5;
+    line-height: 1.33;
   }
 
   .pub-title {
-    margin: 0 0 0.18rem 0;
+    margin: 0 0 0.06rem 0;   /* 题目行与引用行间距 */
     font-weight: 700;
-    line-height: 1.45;
+    line-height: 1.33;
   }
 
   .pub-citation {
     margin: 0;
-    line-height: 1.45;
-    color: #6b7280;
+    line-height: 1.33;
+    color: #7db7ff;
   }
 
   .pub-citation a {
-    color: #6b7280;
+    color: #7db7ff;
     text-decoration: underline;
   }
 
   .pub-citation a:hover {
-    color: #4b5563;
+    color: #5aa2ff;
   }
 
   .me {
@@ -59,88 +80,114 @@ author_profile: false
 </p>
 {% endif %}
 
-<h2 class="pub-section">Selected Publications</h2>
+<div class="pub-page">
 
-<div class="pub-entry">
-  <p class="pub-authors">H.-J. <span class="me">Chen</span>*,†, K. Colburn*,†, P. Liu, H. Yan, H. Hou, J. Ge, J.-Y. Liu, P. Lehan, Q.-X. Ji, Z. Yuan, D. Bouwmeester, C. Holmes, J. Gates, H. Blauvelt, and K. Vahala†</p>
-  <p class="pub-title">Towards fibre-like loss for photonic integration from violet to near-infrared</p>
-  <p class="pub-citation"><a href="https://www.nature.com/articles/s41586-025-09889-w">Nature 649, 338–344 (2026)</a></p>
-</div>
+  <h2 class="pub-section">Selected Publications</h2>
 
-<div class="pub-entry">
-  <p class="pub-authors">H.-J. <span class="me">Chen</span>†, K. Colburn†, J.-Y. Liu, L. Wu, B. Moog, C. Holmes, J. Gates, H. Blauvelt, and K. Vahala</p>
-  <p class="pub-title">Ultra-high-Q Integrated Flame Hydrolysis Deposited Germano-silica Resonators on Silicon</p>
-  <p class="pub-citation">
-    Under review.
-    Also see <a href="https://opg.optica.org/abstract.cfm?uri=CLEO_SI-2024-STu3Q.5">CLEO 2024, paper STu3Q.5</a>
-    and <a href="https://www.ofcconference.org/news-media/news-releases/2026/photonic-chip-technology-manipulates-visible-to-telecom-wavelengths-with-losses-approaching-fiber-op/">OFC 2026</a>.
-  </p>
-</div>
+  <div class="pub-entry">
+    <div class="pub-body">
+      <p class="pub-authors"><span class="me">H.-J. Chen</span>*,†, K. Colburn*,†, P. Liu, H. Yan, H. Hou, J. Ge, J.-Y. Liu, P. Lehan, Q.-X. Ji, Z. Yuan, D. Bouwmeester, C. Holmes, J. Gates, H. Blauvelt, and K. Vahala†</p>
+      <p class="pub-title">“Towards fibre-like loss for photonic integration from violet to near-infrared”</p>
+      <p class="pub-citation"><a href="https://www.nature.com/articles/s41586-025-09889-w">Nature 649, 338–344 (2026)</a></p>
+    </div>
+  </div>
 
-<div class="pub-entry">
-  <p class="pub-authors">H.-J. <span class="me">Chen</span>, Q.-X. Ji, H. Wang, Q.-F. Yang, Q.-T. Cao, Q. Gong, X. Yi, and Y.-F. Xiao</p>
-  <p class="pub-title">Chaos-assisted two-octave-spanning microcombs</p>
-  <p class="pub-citation"><a href="https://www.nature.com/articles/s41467-020-15914-5">Nature Communications 11, 2336 (2020)</a></p>
-</div>
+  <div class="pub-entry">
+    <div class="pub-body">
+      <p class="pub-authors">H.-J. <span class="me">Chen</span>†, K. Colburn†, J.-Y. Liu, L. Wu, B. Moog, C. Holmes, J. Gates, H. Blauvelt, and K. Vahala</p>
+      <p class="pub-title">“Ultra-high-Q integrated flame hydrolysis deposited germano-silica resonators on silicon”</p>
+      <p class="pub-citation">Under review. Also see <a href="https://www.ofcconference.org/news-media/news-releases/2026/photonic-chip-technology-manipulates-visible-to-telecom-wavelengths-with-losses-approaching-fiber-op/">OFC 2026</a>.</p>
+    </div>
+  </div>
 
-<div class="pub-entry">
-  <p class="pub-authors">Z. Lu*, H.-J. <span class="me">Chen</span>*, W. Wang*, L. Yao*, Y. Wang, Y. Yu, B. E. Little, S. T. Chu, et al.</p>
-  <p class="pub-title">Synthesized soliton crystals</p>
-  <p class="pub-citation"><a href="https://www.nature.com/articles/s41467-021-23172-2">Nature Communications 12, 3179 (2021)</a></p>
-</div>
+  <div class="pub-entry">
+    <div class="pub-body">
+      <p class="pub-authors"><span class="me">H.-J. Chen</span>, Q.-X. Ji, H. Wang, Q.-F. Yang, Q.-T. Cao, Q. Gong, X. Yi, and Y.-F. Xiao</p>
+      <p class="pub-title">“Chaos-assisted two-octave-spanning microcombs”</p>
+      <p class="pub-citation"><a href="https://www.nature.com/articles/s41467-020-15914-5">Nature Communications 11, 2336 (2020)</a></p>
+    </div>
+  </div>
 
-<div class="pub-entry">
-  <p class="pub-authors">H. Zhang*, T. Tan*, H.-J. <span class="me">Chen</span>*, Y. Yu*, W. Wang, B. Chang, Y. Liang, Y. Guo, et al.</p>
-  <p class="pub-title">Soliton microcombs multiplexing using intracavity-stimulated Brillouin lasers</p>
-  <p class="pub-citation"><a href="https://link.aps.org/doi/10.1103/PhysRevLett.130.153802">Physical Review Letters 130, 153802 (2023)</a></p>
-</div>
+  <div class="pub-entry">
+    <div class="pub-body">
+      <p class="pub-authors">Z. Lu*, <span class="me">H.-J. Chen</span>*, W. Wang*, L. Yao*, Y. Wang, Y. Yu, B. E. Little, S. T. Chu, et al.</p>
+      <p class="pub-title">“Synthesized soliton crystals”</p>
+      <p class="pub-citation"><a href="https://www.nature.com/articles/s41467-021-23172-2">Nature Communications 12, 3179 (2021)</a></p>
+    </div>
+  </div>
 
-<h2 class="pub-section">Other Publications</h2>
+  <div class="pub-entry">
+    <div class="pub-body">
+      <p class="pub-authors">H. Zhang*, T. Tan*, <span class="me">H.-J. Chen</span>*, Y. Yu*, W. Wang, B. Chang, Y. Liang, Y. Guo, et al.</p>
+      <p class="pub-title">“Soliton microcombs multiplexing using intracavity-stimulated Brillouin lasers”</p>
+      <p class="pub-citation"><a href="https://link.aps.org/doi/10.1103/PhysRevLett.130.153802">Physical Review Letters 130, 153802 (2023)</a></p>
+    </div>
+  </div>
 
-<div class="pub-entry">
-  <p class="pub-authors">Z. Yuan, J. Ge, P. Liu, B. Li, M. Li, J.-Y. Liu, Y. Yu, H.-J. <span class="me">Chen</span>, J. Bowers, and K. Vahala</p>
-  <p class="pub-title">Efficient and wavelength-tunable second-harmonic generation toward the green gap</p>
-  <p class="pub-citation"><a href="https://www.science.org/doi/10.1126/sciadv.adw2781">Science Advances 11(27), eadw2781 (2025)</a></p>
-</div>
+  <h2 class="pub-section">Other Publications</h2>
 
-<div class="pub-entry">
-  <p class="pub-authors">R. Niu, S. Wan, S. M. Sun, T. G. Ma, H.-J. <span class="me">Chen</span>, W. Q. Wang, Z. Lu, W. F. Zhang, et al.</p>
-  <p class="pub-title">Repetition-rate tuning and locking of solitons in a microrod resonator</p>
-  <p class="pub-citation"><a href="https://doi.org/10.1364/OL.511339">Optics Letters 49(3), 570–573 (2024)</a></p>
-</div>
+  <div class="pub-entry">
+    <div class="pub-body">
+      <p class="pub-authors">Z. Yuan, J. Ge, P. Liu, B. Li, M. Li, J.-Y. Liu, Y. Yu, <span class="me">H.-J. Chen</span>, J. Bowers, and K. Vahala</p>
+      <p class="pub-title">“Efficient and wavelength-tunable second-harmonic generation toward the green gap”</p>
+      <p class="pub-citation"><a href="https://www.science.org/doi/10.1126/sciadv.adw2781">Science Advances 11(27), eadw2781 (2025)</a></p>
+    </div>
+  </div>
 
-<div class="pub-entry">
-  <p class="pub-authors">L. Wu, W. Xie, H.-J. <span class="me">Chen</span>, K. Colburn, C. Xiang, L. Chang, W. Jin, J.-Y. Liu, et al.</p>
-  <p class="pub-title">AlGaAs soliton microcombs at room temperature</p>
-  <p class="pub-citation"><a href="https://opg.optica.org/abstract.cfm?uri=ol-48-15-3853">Optics Letters 48(15), 3853–3856 (2023)</a></p>
-</div>
+  <div class="pub-entry">
+    <div class="pub-body">
+      <p class="pub-authors">R. Niu, S. Wan, S. M. Sun, T. G. Ma, <span class="me">H.-J. Chen</span>, W. Q. Wang, Z. Lu, W. F. Zhang, et al.</p>
+      <p class="pub-title">“Repetition-rate tuning and locking of solitons in a microrod resonator”</p>
+      <p class="pub-citation"><a href="https://doi.org/10.1364/OL.511339">Optics Letters 49(3), 570–573 (2024)</a></p>
+    </div>
+  </div>
 
-<div class="pub-entry">
-  <p class="pub-authors">L. Wu, M. Gao, J.-Y. Liu, H.-J. <span class="me">Chen</span>, K. Colburn, H. A. Blauvelt, and K. J. Vahala</p>
-  <p class="pub-title">Hydroxyl ion absorption in on-chip high-Q resonators</p>
-  <p class="pub-citation"><a href="https://doi.org/10.1364/OL.492067">Optics Letters 48(13), 3511–3514 (2023)</a></p>
-</div>
+  <div class="pub-entry">
+    <div class="pub-body">
+      <p class="pub-authors">L. Wu, W. Xie, <span class="me">H.-J. Chen</span>, K. Colburn, C. Xiang, L. Chang, W. Jin, J.-Y. Liu, et al.</p>
+      <p class="pub-title">“AlGaAs soliton microcombs at room temperature”</p>
+      <p class="pub-citation"><a href="https://opg.optica.org/abstract.cfm?uri=ol-48-15-3853">Optics Letters 48(15), 3853–3856 (2023)</a></p>
+    </div>
+  </div>
 
-<div class="pub-entry">
-  <p class="pub-authors">L. Yao, P. Liu, H.-J. <span class="me">Chen</span>, Q. Gong, Q.-F. Yang, and Y.-F. Xiao</p>
-  <p class="pub-title">Soliton microwave oscillators using oversized billion-Q optical microresonators</p>
-  <p class="pub-citation"><a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-9-5-561">Optica 9(5), 561–564 (2022)</a></p>
-</div>
+  <div class="pub-entry">
+    <div class="pub-body">
+      <p class="pub-authors">L. Wu, M. Gao, J.-Y. Liu, <span class="me">H.-J. Chen</span>, K. Colburn, H. A. Blauvelt, and K. J. Vahala</p>
+      <p class="pub-title">“Hydroxyl ion absorption in on-chip high-Q resonators”</p>
+      <p class="pub-citation"><a href="https://doi.org/10.1364/OL.492067">Optics Letters 48(13), 3511–3514 (2023)</a></p>
+    </div>
+  </div>
 
-<div class="pub-entry">
-  <p class="pub-authors">D.-Q. Yang, J. Chen, Q.-T. Cao, B. Duan, H.-J. <span class="me">Chen</span>, X.-C. Yu, and Y.-F. Xiao</p>
-  <p class="pub-title">Operando monitoring of transition dynamics of responsive polymers using optofluidic microcavities</p>
-  <p class="pub-citation"><a href="https://www.nature.com/articles/s41377-021-00570-1">Light: Science &amp; Applications 10(1), 128 (2021)</a></p>
-</div>
+  <div class="pub-entry">
+    <div class="pub-body">
+      <p class="pub-authors">L. Yao, P. Liu, <span class="me">H.-J. Chen</span>, Q. Gong, Q.-F. Yang, and Y.-F. Xiao</p>
+      <p class="pub-title">“Soliton microwave oscillators using oversized billion-Q optical microresonators”</p>
+      <p class="pub-citation"><a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-9-5-561">Optica 9(5), 561–564 (2022)</a></p>
+    </div>
+  </div>
 
-<div class="pub-entry">
-  <p class="pub-authors">Q.-T. Cao, S.-J. Tang, H.-J. <span class="me">Chen</span>, and Y.-F. Xiao</p>
-  <p class="pub-title">Research advances of ultrahigh-Q on-chip microcavity photonics</p>
-  <p class="pub-citation"><a href="https://doi.org/10.1360/TB-2020-0333">Chinese Science Bulletin 65(27), 3028–3042 (2020)</a></p>
-</div>
+  <div class="pub-entry">
+    <div class="pub-body">
+      <p class="pub-authors">D.-Q. Yang, J. Chen, Q.-T. Cao, B. Duan, <span class="me">H.-J. Chen</span>, X.-C. Yu, and Y.-F. Xiao</p>
+      <p class="pub-title">“Operando monitoring of transition dynamics of responsive polymers using optofluidic microcavities”</p>
+      <p class="pub-citation"><a href="https://www.nature.com/articles/s41377-021-00570-1">Light: Science &amp; Applications 10(1), 128 (2021)</a></p>
+    </div>
+  </div>
 
-<div class="pub-entry">
-  <p class="pub-authors">Y. Zhi, X.-C. Yu, H.-J. <span class="me">Chen</span>, B.-O. Guan, and Y.-F. Xiao</p>
-  <p class="pub-title">Noise suppression of mechanical oscillations in a microcavity for ultrasensitive detection</p>
-  <p class="pub-citation"><a href="https://doi.org/10.1364/OL.44.002426">Optics Letters 44(10), 2426–2429 (2019)</a></p>
+  <div class="pub-entry">
+    <div class="pub-body">
+      <p class="pub-authors">Q.-T. Cao, S.-J. Tang, <span class="me">H.-J. Chen</span>, and Y.-F. Xiao</p>
+      <p class="pub-title">“Research advances of ultrahigh-Q on-chip microcavity photonics”</p>
+      <p class="pub-citation"><a href="https://doi.org/10.1360/TB-2020-0333">Chinese Science Bulletin 65(27), 3028–3042 (2020)</a></p>
+    </div>
+  </div>
+
+  <div class="pub-entry">
+    <div class="pub-body">
+      <p class="pub-authors">Y. Zhi, X.-C. Yu, <span class="me">H.-J. Chen</span>, B.-O. Guan, and Y.-F. Xiao</p>
+      <p class="pub-title">“Noise suppression of mechanical oscillations in a microcavity for ultrasensitive detection”</p>
+      <p class="pub-citation"><a href="https://doi.org/10.1364/OL.44.002426">Optics Letters 44(10), 2426–2429 (2019)</a></p>
+    </div>
+  </div>
+
 </div>
