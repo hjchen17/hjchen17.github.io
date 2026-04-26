@@ -1,0 +1,39 @@
+.pub-section-title {
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.pub-entry {
+  margin-bottom: 1.35rem;
+}
+
+.pub-authors {
+  margin: 0 0 0.18rem 0;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.pub-title {
+  margin: 0 0 0.18rem 0;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.pub-citation {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.pub-citation a {
+  color: #6b7280;
+  text-decoration: underline;
+}
+
+.pub-citation a:hover {
+  color: #4b5563;
+}
+
+.me {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
