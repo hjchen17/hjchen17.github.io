@@ -12,14 +12,14 @@ redirect_from:
 <!-- Optional: add a downloadable PDF CV here once uploaded to /files/ -->
 <!-- [Download PDF CV]({{ '/files/Hao_Jing_Chen_CV.pdf' | relative_url }}) -->
 
-## Professional Experience
+## Employment
 
 - **Postdoctoral Scholar**, California Institute of Technology (Caltech), 2022–Present  
   Advisor: Kerry Vahala
 
 ## Education
 
-- **Ph.D. in Applied Physics**, Peking University, 2017–2022  
+- **Ph.D. in Optics**, Peking University, 2017–2022  
   Advisor: Yun-Feng Xiao
 
 - **B.S. in Physics**, University of Science and Technology of China, 2013–2017
@@ -34,7 +34,6 @@ redirect_from:
 - **2021** — Top 10 Optical Breakthroughs in China
 - **2020, 2021** — Director’s Scholarship, Institute of Modern Optics, Peking University
 - **2020** — National Scholarship for Doctoral Students
-- **2020** — Pacemaker to Merit Student, Peking University
 
 ## Professional Service
 
