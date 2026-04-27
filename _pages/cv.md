@@ -37,4 +37,4 @@ redirect_from:
 
 ## Professional Service
 
-- Reviewer for *Nature Communications* (1), *Science Advances* (1), *Light: Science & Applications* (2), *Nanophotonics* (1), *Photonics Research* (1), and *Communications Physics* (1)
+- Reviewer for *Nature Communications*, *Science Advances*, *Light: Science & Applications*, *Nanophotonics*, *Photonics Research*, and *Communications Physics*.
