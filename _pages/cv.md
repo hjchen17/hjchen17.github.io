@@ -1,64 +1,41 @@
 ---
-layout: archive
+layout: single
 title: "CV"
 permalink: /cv/
-author_profile: true
+author_profile: false
 redirect_from:
   - /resume
 ---
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<!-- Optional: add a downloadable PDF CV here once uploaded to /files/ -->
+<!-- [Download PDF CV]({{ '/files/Hao_Jing_Chen_CV.pdf' | relative_url }}) -->
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Professional Experience
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+- **Postdoctoral Scholar**, California Institute of Technology (Caltech), 2022–Present  
+  Advisor: Kerry Vahala
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Education
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+- **Ph.D. in Applied Physics**, Peking University, 2017–2022  
+  Advisor: Yun-Feng Xiao
+
+- **B.S. in Physics**, University of Science and Technology of China, 2013–2017
+
+## Honors & Awards
+
+- **2026** — Optical Fiber Communication Conference (OFC 2026) Official News Release Highlight (one of only three papers selected worldwide) and Top-Scored Paper
+- **2026** — Nominated for the Falling Walls Science Breakthrough of the Year 2026 (Candidate)
+- **2022** — Outstanding Graduate of Beijing Higher Education Institutions
+- **2022** — Outstanding Graduate of Peking University
+- **2022** — Outstanding Doctoral Dissertation of Peking University
+- **2021** — Top 10 Optical Breakthroughs in China
+- **2020, 2021** — Director’s Scholarship, Institute of Modern Optics, Peking University
+- **2020** — National Scholarship for Doctoral Students
+- **2020** — Pacemaker to Merit Student, Peking University
+
+## Professional Service
+
+- Reviewer for *Nature Communications* (1), *Science Advances* (1), *Light: Science & Applications* (2), *Nanophotonics* (1), *Photonics Research* (1), and *Communications Physics* (1)
