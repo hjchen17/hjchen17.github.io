@@ -1,14 +1,400 @@
 ---
-layout: archive
-title: "Portfolio"
+layout: single
+title: "Research"
 permalink: /portfolio/
-author_profile: true
+author_profile: false
+redirect_from:
+  - /research/
 ---
+
+<style>
+  .research-hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 2rem;
+    align-items: center;
+    margin: 0.5rem 0 2rem 0;
+  }
+
+  .hero-kicker {
+    color: #0b63ce;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.35rem;
+  }
+
+  .hero-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.35rem;
+    line-height: 1.06;
+  }
+
+  .hero-subtitle {
+    margin: 0 0 0.85rem 0;
+    font-size: 1.15rem;
+    line-height: 1.45;
+    color: #374151;
+  }
+
+  .hero-text {
+    line-height: 1.65;
+    color: #111827;
+    margin: 0;
+  }
+
+  .hero-media img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+  }
+
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.9rem;
+    margin: 1.25rem 0 2rem 0;
+  }
+
+  .metric-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1rem;
+    background: #fff;
+  }
+
+  .metric-number {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #0b63ce;
+    line-height: 1.1;
+    margin: 0 0 0.3rem 0;
+  }
+
+  .metric-label {
+    margin: 0;
+    color: #374151;
+    line-height: 1.45;
+  }
+
+  .section-block {
+    margin: 2.2rem 0;
+  }
+
+  .section-lead {
+    margin: 0.3rem 0 0 0;
+    max-width: 950px;
+    line-height: 1.65;
+    color: #374151;
+  }
+
+  .highlight-box {
+    margin: 1rem 0 0 0;
+    padding: 1rem 1.1rem;
+    border-left: 4px solid #0b63ce;
+    border-radius: 10px;
+    background: #f8fbff;
+    line-height: 1.65;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1rem 1rem 0.95rem 1rem;
+    background: #fff;
+  }
+
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 0.45rem;
+  }
+
+  .card p {
+    margin: 0;
+    line-height: 1.55;
+    color: #374151;
+  }
+
+  .figure-frame {
+    margin-top: 1rem;
+    padding: 0.85rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fafafa;
+  }
+
+  .figure-frame img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .figure-caption {
+    margin: 0.65rem 0 0 0;
+    font-size: 0.92rem;
+    color: #4b5563;
+    line-height: 1.5;
+  }
+
+  .media-split {
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    gap: 1.5rem;
+    align-items: start;
+    margin-top: 1rem;
+  }
+
+  .bullets {
+    margin: 0.7rem 0 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .bullets li {
+    margin-bottom: 0.45rem;
+    line-height: 1.55;
+  }
+
+  .recognition-list {
+    margin: 0.5rem 0 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .recognition-list li {
+    margin-bottom: 0.55rem;
+    line-height: 1.55;
+  }
+
+  .output-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .output-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1rem;
+    background: #fff;
+  }
+
+  .output-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.35rem;
+  }
+
+  .output-card p {
+    margin: 0 0 0.55rem 0;
+    line-height: 1.55;
+    color: #374151;
+  }
+
+  .contact-box {
+    margin-top: 1rem;
+    padding: 1rem 1.1rem;
+    border-radius: 12px;
+    background: #f8fbff;
+    border: 1px solid #dbeafe;
+    line-height: 1.65;
+  }
+
+  @media (max-width: 900px) {
+    .research-hero,
+    .media-split {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    .hero-title {
+      font-size: 2rem;
+    }
+  }
+</style>
 
 {% include base_path %}
 
+<div class="research-hero">
+  <div>
+    <div class="hero-kicker">Falling Walls project website</div>
+    <h1 class="hero-title">Breaking the Wall of High Loss in Photonic Chips</h1>
+    <p class="hero-subtitle">Towards fibre-like loss photonic integrated circuits from violet to near-infrared</p>
+    <p class="hero-text">
+      Optical fiber built the global internet because of its exceptionally low light transmission loss. Modern computing was enabled by scalable integrated circuits. This project brings these two technological foundations together by adapting fiber-optic glass to a CMOS-foundry-compatible photonic platform, breaking the longstanding loss wall in integrated photonics and enabling a new generation of coherent, energy-efficient, and deployable photonic systems.
+    </p>
+  </div>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+  <div class="hero-media">
+    <!-- HERO IMAGE: use chip_crop.jpg -->
+    <img src="{{ '/images/chip_crop.jpg' | relative_url }}" alt="Concept image for fibre-like low-loss photonic integrated circuits">
+  </div>
+</div>
 
+<div class="metric-grid">
+  <div class="metric-card">
+    <div class="metric-number">100×</div>
+    <p class="metric-label">Reduction in light loss compared with existing platforms, as framed in the Falling Walls nomination.</p>
+  </div>
+  <div class="metric-card">
+    <div class="metric-number">Platform</div>
+    <p class="metric-label">A new materials-and-manufacturing foundation, not just a one-off device record.</p>
+  </div>
+  <div class="metric-card">
+    <div class="metric-number">AI · Timing · Quantum</div>
+    <p class="metric-label">A common photonic platform for communications, precision measurement, and large-scale quantum systems.</p>
+  </div>
+</div>
+
+<div class="section-block">
+  <h2>Core idea</h2>
+  <div class="highlight-box">
+    Every lost photon on a chip means more laser power, more heat, less coherence, and less deployable photonic systems. This project attacks that bottleneck at its source by adapting fiber-derived germanium-doped silica to a CMOS-compatible process and using wafer-scale reflow to smooth waveguides to atomic-scale roughness.
+  </div>
+</div>
+
+<div class="section-block">
+  <h2>Why low loss matters</h2>
+  <p class="section-lead">
+    Integrated photonics has long faced a “loss wall”: microfabrication-induced roughness scatters light, especially at visible wavelengths, increasing power consumption, heat, and noise while reducing coherence. Lower loss is not just a better device metric — it is the difference between a laboratory demonstration and a deployable photonic system.
+  </p>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>Lower power</h3>
+      <p>Every lost photon demands more laser power. Ultralow-loss chips can reduce the power overhead of optical links and coherent photonic systems.</p>
+    </div>
+    <div class="card">
+      <h3>Lower heat and noise</h3>
+      <p>Loss translates into heating, instability, and degraded coherence. Reducing scattering directly improves precision and scalability.</p>
+    </div>
+    <div class="card">
+      <h3>More deployable systems</h3>
+      <p>Low-loss, compact, and manufacturable photonics can move precision technologies out of the lab and into real-world use.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-block">
+  <h2>From optical fiber and integrated circuits to a new photonic platform</h2>
+  <p class="section-lead">
+    The internet was built on low-loss optical fiber, while modern computing was built on scalable integrated circuits. My project combines these two foundations by bringing the material logic of fiber into manufacturable photonic chips.
+  </p>
+
+  <div class="figure-frame">
+    <!-- CONCEPT FIGURE: use roadmap.png -->
+    <img src="{{ '/images/roadmap.png' | relative_url }}" alt="Concept figure showing optical fiber, integrated circuits, and fibre-like photonic integrated circuits">
+    <p class="figure-caption">
+      Concept figure: low-loss optical fiber and large-scale integrated circuits together motivate a new generation of fibre-like photonic integrated circuits.
+    </p>
+  </div>
+</div>
+
+<div class="section-block">
+  <h2>The technical breakthrough</h2>
+
+  <div class="media-split">
+    <div>
+      <p class="section-lead">
+        Instead of optimizing one photonic device at a time, this work creates a new photonic platform. The key invention is a wafer-scale self-smoothing process: higher GeO<sub>2</sub> doping than in standard fiber lowers the glass softening temperature, enabling reflow in a foundry-compatible furnace. Surface tension then smooths rough waveguides to atomic-scale roughness, removing scattering loss at its source.
+      </p>
+
+      <ul class="bullets">
+        <li>Fiber-derived germanosilica adapted to a CMOS-foundry-compatible process</li>
+        <li>Wafer-scale reflow that smooths waveguides to atomic-scale roughness</li>
+        <li>Direct improvement in coherence for visible-to-infrared photonics</li>
+        <li>A shared platform for lasers, Brillouin devices, and dispersion-engineered microcombs</li>
+      </ul>
+    </div>
+
+    <div class="figure-frame">
+      <!-- PLATFORM IMAGE: rename "spiral chip.png" to spiral_chip.png -->
+      <img src="{{ '/images/spiral_chip.png' | relative_url }}" alt="Experimental image of the Ge:silica chip platform">
+      <p class="figure-caption">
+        Candidate platform image: use the chip close-up here to emphasize the material platform and fabrication route.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="section-block">
+  <h2>Why this is a paradigm shift</h2>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>Old tradeoff</h3>
+      <p>Fiber delivers ultralow loss, while chips deliver scalable integration. Integrated photonics has long been forced to accept this compromise.</p>
+    </div>
+    <div class="card">
+      <h3>New possibility</h3>
+      <p>This project shows that fiber-derived glass can deliver ultralow loss in scalable chips, removing the old tradeoff between coherence and manufacturability.</p>
+    </div>
+    <div class="card">
+      <h3>From device to platform</h3>
+      <p>The result is not just a better resonator or a better waveguide, but a new foundation for visible photonics, coherent lasers, microcombs, and integrated precision systems.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-block">
+  <h2>What this platform enables</h2>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>AI optical interconnects</h3>
+      <p>Lower-loss photonic chips can cut laser power, heat, and electricity use in optical interconnects, supporting more sustainable data-center growth.</p>
+    </div>
+    <div class="card">
+      <h3>Precision timing &amp; navigation</h3>
+      <p>Higher coherence and compactness can shrink precision timing and navigation systems for space exploration and GPS-denied environments.</p>
+    </div>
+    <div class="card">
+      <h3>Large-scale quantum systems</h3>
+      <p>Over the longer term, ultralow-loss photonic platforms can support large-scale quantum photonic systems for discovery in chemistry, materials, and medicine.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-block">
+  <h2>Recognition and external validation</h2>
+  <ul class="recognition-list">
+    <li><a href="https://www.nature.com/articles/s41586-025-09889-w">Nature 2026</a>: <em>Towards fibre-like loss for photonic integration from violet to near-infrared</em></li>
+    <li><a href="https://www.caltech.edu/about/news/extending-optical-fibers-ultralow-loss-performance-to-photonic-chips">Caltech News</a> feature on extending fiber-class ultralow-loss performance to photonic chips</li>
+    <li><a href="https://www.ofcconference.org/news-media/news-releases/2026/photonic-chip-technology-manipulates-visible-to-telecom-wavelengths-with-losses-approaching-fiber-op/">OFC 2026 official news release</a></li>
+    <li><a href="https://mp.weixin.qq.com/s/U_i70Jiyy3_scNbfYklU7Q">MIT Technology Review China</a> feature</li>
+    <li>Recognized by OFC 2026 as a Top-Scored Paper and one of only three papers selected worldwide for an official news release</li>
+  </ul>
+</div>
+
+<div class="section-block">
+  <h2>Selected outputs</h2>
+
+  <div class="output-grid">
+    <div class="output-card">
+      <h3>Paper</h3>
+      <p>“Towards fibre-like loss for photonic integration from violet to near-infrared”</p>
+      <a href="https://www.nature.com/articles/s41586-025-09889-w">Read the Nature paper</a>
+    </div>
+
+    <div class="output-card">
+      <h3>Media</h3>
+      <p>Official conference and institutional coverage helps make the project accessible to broader scientific and public audiences.</p>
+      <a href="https://www.ofcconference.org/news-media/news-releases/2026/photonic-chip-technology-manipulates-visible-to-telecom-wavelengths-with-losses-approaching-fiber-op/">Read the OFC news release</a>
+    </div>
+  </div>
+</div>
+
+<div class="section-block">
+  <h2>Collaboration and contact</h2>
+  <div class="contact-box">
+    I welcome inquiries from researchers, students, and industry colleagues interested in integrated photonics, visible photonics, coherent light sources, precision metrology, AI optical interconnects, and quantum technologies. This project is being developed as a new materials-and-manufacturing foundation for future photonic systems.<br><br>
+    <strong>Role:</strong> Project co-leader and developer<br>
+    <strong>Email:</strong> <a href="mailto:haojing@caltech.edu">haojing@caltech.edu</a><br>
+    <strong>Google Scholar:</strong> <a href="{{ site.author.googlescholar }}">Profile</a>
+  </div>
+</div>
