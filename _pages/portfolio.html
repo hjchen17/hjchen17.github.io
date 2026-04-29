@@ -47,11 +47,17 @@ classes: wide
     margin-top: 0 !important;
   }
 
-  /* Make the navbar visually blend with the dark hero image on this page */
-  .masthead {
+  /* Make the navbar visually blend with the dark hero image on this page.
+     Minimal Mistakes/Greedy Nav has several nested backgrounds, so override all of them. */
+  .masthead,
+  .masthead__inner-wrap,
+  .masthead__menu,
+  #site-nav,
+  .greedy-nav {
     margin-bottom: 0 !important;
     background: #07111f !important;
     border-bottom: 0 !important;
+    box-shadow: none !important;
   }
 
   .masthead__inner-wrap {
@@ -59,18 +65,55 @@ classes: wide
     padding-bottom: 0.75em !important;
   }
 
-  .greedy-nav {
+  .greedy-nav .visible-links,
+  .greedy-nav .visible-links li,
+  .greedy-nav .visible-links a,
+  .masthead__menu-item,
+  .masthead__menu-item a {
     background: transparent !important;
   }
 
   .greedy-nav a,
   .site-title,
-  .masthead__menu-item a {
+  .masthead__menu-item a,
+  .greedy-nav button,
+  .greedy-nav__toggle,
+  .search__toggle {
     color: #f8fafc !important;
+  }
+
+  .greedy-nav button,
+  .greedy-nav__toggle,
+  .search__toggle {
+    background: transparent !important;
+    border: 0 !important;
+  }
+
+  .greedy-nav button:hover,
+  .greedy-nav__toggle:hover,
+  .search__toggle:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
   }
 
   .greedy-nav .visible-links a:before {
     background: #93c5fd !important;
+  }
+
+  .greedy-nav .hidden-links {
+    background: #07111f !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.24) !important;
+  }
+
+  .greedy-nav .hidden-links li,
+  .greedy-nav .hidden-links a {
+    background: transparent !important;
+    color: #f8fafc !important;
+  }
+
+  .greedy-nav .hidden-links:before,
+  .greedy-nav .hidden-links:after {
+    border-bottom-color: #07111f !important;
   }
 
   /* Full-bleed page wrapper */
@@ -97,14 +140,23 @@ classes: wide
     padding: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     color: #ffffff;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
   }
 
+  .research-hero .research-shell {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .hero-panel {
     max-width: 930px;
+    margin: 0 auto;
     padding: 0;
     border-radius: 0;
     background: transparent;
@@ -145,6 +197,7 @@ classes: wide
   .hero-links {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0.7rem;
     margin-top: 1.15rem;
   }
@@ -357,8 +410,8 @@ classes: wide
   <!-- Full-screen hero with chip_crop background -->
   <section class="research-hero"
            style="background-image:
-             linear-gradient(90deg, rgba(3, 8, 23, 0.96) 0%, rgba(3, 8, 23, 0.82) 38%, rgba(3, 8, 23, 0.40) 68%, rgba(3, 8, 23, 0.18) 100%),
-             linear-gradient(180deg, rgba(7, 17, 31, 0.92) 0%, rgba(7, 17, 31, 0.45) 120px, rgba(7, 17, 31, 0.04) 35%),
+             linear-gradient(90deg, rgba(3, 8, 23, 0.34) 0%, rgba(3, 8, 23, 0.78) 30%, rgba(3, 8, 23, 0.90) 50%, rgba(3, 8, 23, 0.78) 70%, rgba(3, 8, 23, 0.34) 100%),
+             linear-gradient(180deg, rgba(7, 17, 31, 0.95) 0%, rgba(7, 17, 31, 0.45) 120px, rgba(7, 17, 31, 0.08) 42%),
              url('{{ '/images/chip_crop.jpg' | relative_url }}');">
     <div class="research-shell">
       <div class="hero-panel">
