@@ -16,25 +16,48 @@ classes: wide
     display: none;
   }
 
+  /* Remove Minimal Mistakes outer spacing so the hero can touch the navbar and viewport edges */
+  #main {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .page {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   .page__inner-wrap {
     max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .page__content {
     float: none !important;
     width: 100% !important;
-    padding-right: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .page__content > *:first-child {
+    margin-top: 0 !important;
+  }
+
+  .masthead {
+    margin-bottom: 0 !important;
   }
 
   /* Full-bleed page wrapper */
   .research-full {
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
     width: 100vw;
-    overflow: hidden;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    overflow-x: hidden;
     background: #ffffff;
   }
 
@@ -46,7 +69,10 @@ classes: wide
 
   /* Hero */
   .research-hero {
+    width: 100vw;
     min-height: 78vh;
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     color: #ffffff;
@@ -57,12 +83,13 @@ classes: wide
 
   .hero-panel {
     max-width: 930px;
-    padding: 2rem 2.2rem;
-    border-radius: 18px;
-    background: rgba(8, 18, 40, 0.52);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(6px);
-    box-shadow: 0 14px 48px rgba(0, 0, 0, 0.22);
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    border: 0;
+    backdrop-filter: none;
+    box-shadow: none;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.62);
   }
 
   .hero-kicker {
@@ -286,7 +313,7 @@ classes: wide
     }
 
     .hero-panel {
-      padding: 1.3rem 1.2rem;
+      padding: 0;
     }
 
     .hero-title {
