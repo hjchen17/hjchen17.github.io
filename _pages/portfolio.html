@@ -9,7 +9,7 @@ classes: wide
 ---
 
 <style>
-  /* Remove default page chrome for a cleaner project-style page */
+  /* Hide default page chrome for a cleaner project-style page */
   .page__title,
   .page__meta,
   .page__share {
@@ -18,24 +18,15 @@ classes: wide
 
   .page__inner-wrap {
     max-width: none !important;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
   }
 
   .page__content {
     float: none !important;
     width: 100% !important;
-    max-width: none !important;
     padding-right: 0 !important;
-    margin-top: 0 !important;
   }
 
-  .page {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
-  /* Full-width wrapper */
+  /* Full-bleed page wrapper */
   .research-full {
     position: relative;
     left: 50%;
@@ -47,37 +38,31 @@ classes: wide
     background: #ffffff;
   }
 
-  .research-container {
-    max-width: 1240px;
+  .research-shell {
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
   }
 
   /* Hero */
   .research-hero {
-    width: 100vw;
     min-height: 78vh;
     display: flex;
-    align-items: stretch;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    color: #ffffff;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
   }
 
-  .hero-overlay {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    background: linear-gradient(90deg, rgba(4, 10, 24, 0.78) 0%, rgba(10, 36, 92, 0.45) 38%, rgba(4, 10, 24, 0.70) 100%);
-  }
-
-  .hero-inner {
-    max-width: 980px;
-    margin: 0;
-    padding: 2.5rem 3rem 2.5rem 3rem;
+  .hero-panel {
+    max-width: 930px;
+    padding: 2rem 2.2rem;
+    border-radius: 18px;
+    background: rgba(8, 18, 40, 0.52);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 14px 48px rgba(0, 0, 0, 0.22);
   }
 
   .hero-kicker {
@@ -91,9 +76,8 @@ classes: wide
 
   .hero-title {
     margin: 0 0 0.55rem 0;
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     line-height: 1.02;
-    color: #ffffff;
   }
 
   .hero-subtitle {
@@ -105,8 +89,7 @@ classes: wide
 
   .hero-text {
     margin: 0;
-    max-width: 860px;
-    line-height: 1.72;
+    line-height: 1.7;
     color: #f8fafc;
   }
 
@@ -119,7 +102,7 @@ classes: wide
 
   .hero-links a {
     display: inline-block;
-    padding: 0.55rem 0.95rem;
+    padding: 0.55rem 0.9rem;
     border-radius: 999px;
     border: 1px solid rgba(255, 255, 255, 0.28);
     color: #ffffff;
@@ -137,7 +120,6 @@ classes: wide
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 0.8rem;
     margin-top: 1.2rem;
-    max-width: 900px;
   }
 
   .hero-metric {
@@ -149,10 +131,9 @@ classes: wide
 
   .hero-metric strong {
     display: block;
-    font-size: 1.22rem;
+    font-size: 1.25rem;
     line-height: 1.15;
     margin-bottom: 0.18rem;
-    color: #ffffff;
   }
 
   .hero-metric span {
@@ -296,7 +277,7 @@ classes: wide
   }
 
   @media (max-width: 960px) {
-    .research-container {
+    .research-shell {
       padding: 0 1.2rem;
     }
 
@@ -304,8 +285,8 @@ classes: wide
       min-height: 68vh;
     }
 
-    .hero-inner {
-      padding: 1.5rem 1.2rem 1.5rem 1.2rem;
+    .hero-panel {
+      padding: 1.3rem 1.2rem;
     }
 
     .hero-title {
@@ -322,12 +303,13 @@ classes: wide
 
 <div class="research-full">
 
+  <!-- Full-screen hero with chip_crop background -->
   <section class="research-hero"
            style="background-image:
-             linear-gradient(120deg, rgba(4,10,24,0.82), rgba(10,36,92,0.50), rgba(4,10,24,0.76)),
+             linear-gradient(120deg, rgba(4,10,24,0.82), rgba(10,36,92,0.52), rgba(4,10,24,0.78)),
              url('{{ '/images/chip_crop.jpg' | relative_url }}');">
-    <div class="hero-overlay">
-      <div class="hero-inner">
+    <div class="research-shell">
+      <div class="hero-panel">
         <p class="hero-kicker">Featured research project</p>
         <h1 class="hero-title">Breaking the Wall of High Loss in Photonic Chips</h1>
         <p class="hero-subtitle">Towards fibre-like loss photonic integrated circuits from violet to near-infrared</p>
@@ -360,7 +342,7 @@ classes: wide
   </section>
 
   <section class="section-band">
-    <div class="research-container">
+    <div class="research-shell">
       <div class="section-header">
         <h2>Project overview</h2>
         <p class="section-lead">
@@ -375,7 +357,7 @@ classes: wide
   </section>
 
   <section class="section-band alt">
-    <div class="research-container">
+    <div class="research-shell">
       <div class="split-2">
         <div>
           <div class="section-header">
@@ -403,7 +385,7 @@ classes: wide
   </section>
 
   <section class="section-band">
-    <div class="research-container">
+    <div class="research-shell">
       <div class="split-2">
         <div>
           <div class="section-header">
@@ -424,7 +406,7 @@ classes: wide
         <div class="figure-frame">
           <img src="{{ '/images/spiral%20chip.png' | relative_url }}" alt="Experimental image of the Ge:silica chip platform">
           <p class="figure-caption">
-            Candidate platform image: Ge:silica chip technology underlying this project.
+            Platform image: candidate visual for the Ge:silica chip technology underlying this project.
           </p>
         </div>
       </div>
@@ -432,7 +414,7 @@ classes: wide
   </section>
 
   <section class="section-band alt">
-    <div class="research-container">
+    <div class="research-shell">
       <div class="section-header">
         <h2>Why low loss matters</h2>
         <p class="section-lead">
@@ -458,7 +440,7 @@ classes: wide
   </section>
 
   <section class="section-band">
-    <div class="research-container">
+    <div class="research-shell">
       <div class="section-header">
         <h2>What this platform enables</h2>
         <p class="section-lead">
@@ -484,7 +466,7 @@ classes: wide
   </section>
 
   <section class="section-band alt">
-    <div class="research-container">
+    <div class="research-shell">
       <div class="section-header">
         <h2>Selected outputs and media</h2>
         <p class="section-lead">
@@ -516,12 +498,20 @@ classes: wide
           <p>Media coverage emphasizing the project’s relevance to precision measurement, AI computing, and quantum technologies.</p>
           <a href="https://mp.weixin.qq.com/s/U_i70Jiyy3_scNbfYklU7Q">Read the article</a>
         </div>
+
+        <!-- Optional future asset:
+        <div class="media-card">
+          <h3>Visual explainer</h3>
+          <p>A short animation or one-page visual summary can be linked here later if desired.</p>
+          <a href="{{ '/files/fiber-to-chip-animation.mp4' | relative_url }}">View animation</a>
+        </div>
+        -->
       </div>
     </div>
   </section>
 
   <section class="section-band">
-    <div class="research-container">
+    <div class="research-shell">
       <div class="section-header">
         <h2>Collaboration and contact</h2>
         <p class="section-lead">
