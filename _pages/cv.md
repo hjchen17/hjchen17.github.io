@@ -22,7 +22,7 @@ redirect_from:
 - **Ph.D. in Optics**, Peking University, 2017–2022  
   Advisor: Yun-Feng Xiao
 
-- **B.S. in Physics**, University of Science and Technology of China, 2013–2017
+- **B.S. in Physics**, University of Science and Technology of China (USTC), 2013–2017
 
 ## Honors & Awards
 
