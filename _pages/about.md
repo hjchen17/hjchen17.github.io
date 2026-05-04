@@ -46,5 +46,5 @@ Featured by *[Caltech News](https://www.caltech.edu/about/news/extending-optical
 
 ## Prospective Collaboration
 
-I welcome inquiries from researchers of the broader academic and industrial community who share related interests.
+Any inquiries from researchers of the broader academic and industrial community are welcome! Please contact me via email: haojing@caltech.edu.
 
